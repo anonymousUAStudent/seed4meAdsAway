@@ -1,0 +1,20 @@
+{
+  "name": "Go away Seed4.Me Ads",
+  "description": "This extension will remove the hell Seed4.Me advertising",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+   ],
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "browser_action.html"
+  }
+}
